@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+  function topla(){
+  s1=document.getElementById("s1").value;
+  s2=document.getElementById("s2").value;
+  t=parseInt(s1)+parseInt(s2)
+  document.getElementById("sonuc").value=t;
+  return false;
+  }
+  
+
+  function cikar(){
+	  s1=document.getElementById("s1").value;
+	  s2=document.getElementById("s2").value;
+	 sonuc=s1-s2;
+	  document.getElementById("sonuc").value=sonuc;
+	  return false;
+  }
+
+  function carp(){
+	  s1=document.getElementById("s1").value;
+	  s2=document.getElementById("s2").value;
+	  sonuc=s1*s2;
+	  document.getElementById("sonuc").value=sonuc;
+	  return false;
+  }
+  function bol(){
+	  s1=document.getElementById("s1").value;
+	  s2=document.getElementById("s2").value;
+	  sonuc=s1/s2;
+	  document.getElementById("sonuc").value=sonuc;
+	  return false;
+  }
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Başlıksız Belge</title>
+</head>
+<body>
+
+<table width="256" height="125" border="1">
+  <tr>
+    <td width="119">1.sayı</td>
+    <td width="121"><label for="s1"></label>
+    <input type="text" name="s1" id="s1" /></td>
+  </tr>
+  <tr>
+    <td>2.sayı</td>
+    <td><label for="s2"></label>
+    <input type="text" name="s2" id="s2" /></td>
+  </tr>
+  <tr>
+    <td>sonuc</td>
+    <td><label for="sonuc"></label>
+    <input type="text" name="sonuc" id="sonuc" /></td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="submit" name="topla" id="topla" value="topla" onclick=" return topla();" />
+    <input type="submit" name="cikar" id="cikar" value="çıkra" onclick=" return cikar();" />
+    <input type="submit" name="carpma" id="carpma" value="çarp" onclick=" return carp();" />
+    <input type="submit" name="bol" id="bol" value="bol" onclick=" return bol();" /></td>
+  </tr>
+</table>
+</body>
+</html>
